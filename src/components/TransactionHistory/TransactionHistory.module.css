@@ -1,0 +1,26 @@
+.table {
+  /* text-align: center; */
+  padding: 15px;
+  width: 512px;
+  background: #f56d6d;
+  border: 2px solid rgb(97, 96, 96);
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2), 2px 1px 1px rgba(0, 0, 0, 0.14),
+    2px 4px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+.tHead {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #be4747;
+  background-color: rgb(206, 168, 241);
+}
+
+.item {
+  text-align: center;
+  font-size: 24px;
+  background-color: rgb(203, 240, 247);
+}
+.item:nth-child(2n + 1) {
+  background-color: rgb(31, 214, 214);
+}

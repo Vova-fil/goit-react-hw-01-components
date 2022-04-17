@@ -4,22 +4,23 @@ import s from './TransactionHistory.module.css';
 export function TransactionHistory({ items }) {
   return (
     <table className={s.table}>
-      <thead>
+      <thead className={s.tHead}>
         <tr>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
-      <tbody>
-        {items.map(item => (
-          <tr key={item.id}>
+
+      {items.map(item => (
+        <tbody key={item.id} className={s.item}>
+          <tr>
             <td>{item.type}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
           </tr>
-        ))}
-      </tbody>
+        </tbody>
+      ))}
     </table>
   );
 }

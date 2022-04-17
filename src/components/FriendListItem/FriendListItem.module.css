@@ -1,0 +1,28 @@
+.avatar {
+  display: flex;
+  width: 88px;
+  margin-left: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5%;
+  margin-right: 30px;
+  background-color: aqua;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.online {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  border-radius: 50%;
+}
+.ofline {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+}
