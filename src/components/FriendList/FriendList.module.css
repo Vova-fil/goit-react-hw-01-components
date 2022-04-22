@@ -1,4 +1,4 @@
-.friend {
+/* .friend {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,4 +10,4 @@
 }
 .friend:not(:last-child) {
   margin-bottom: 10px;
-}
+} */

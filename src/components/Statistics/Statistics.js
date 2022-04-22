@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
-export function Statistics({ stats }) {
+export function Statistics({ stats, title = true }) {
   return (
     <section className={s.section}>
-      <h2 className={s.title}>Upload stats</h2>
+      {title && <h2 className={s.title}>Upload stats</h2>}
 
       <ul className={s.statList}>
-        {stats.map(stat => (
+        {stats.map(({ id, label, percentage }) => (
           <li
-            key={stat.id}
+            key={id}
             className={s.item}
             style={{
               backgroundColor: `#${Math.floor(
@@ -18,8 +18,8 @@ export function Statistics({ stats }) {
               ).toString(16)}`,
             }}
           >
-            <span className={s.label}>{stat.label}</span>
-            <span className={s.percentage}>{stat.percentage}</span>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}</span>
           </li>
         ))}
       </ul>

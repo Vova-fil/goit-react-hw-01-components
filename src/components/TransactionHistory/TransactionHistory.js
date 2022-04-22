@@ -26,10 +26,15 @@ export function TransactionHistory({ items }) {
 }
 
 TransactionHistory.propTypes = {
-  items: {
+  items: PropTypes.exact({
     id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
-  },
+  }),
 };
+
+//  stats: PropTypes.exact({
+//     followers: PropTypes.number.isRequired,
+//     views: PropTypes.number.isRequired,
+//     likes: PropTypes.number.isRequired,
