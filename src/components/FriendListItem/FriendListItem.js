@@ -16,6 +16,3 @@ FriendListItem.propTypes = {
   name: PropTypes.number.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };
-//  <li className={s.friend} key={id}>
-//    <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
-//  </li>;

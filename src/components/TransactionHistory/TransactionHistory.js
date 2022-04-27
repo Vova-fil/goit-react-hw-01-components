@@ -33,8 +33,3 @@ TransactionHistory.propTypes = {
     currency: PropTypes.string.isRequired,
   }),
 };
-
-//  stats: PropTypes.exact({
-//     followers: PropTypes.number.isRequired,
-//     views: PropTypes.number.isRequired,
-//     likes: PropTypes.number.isRequired,
